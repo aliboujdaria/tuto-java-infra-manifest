@@ -49,12 +49,12 @@ spec:
             - name: "POSTGRES_USER"
               valueFrom:
                 secretKeyRef:
-                  name: postgres-credentials
+                  name: postgresql
                   key: POSTGRES_USER
             - name: "POSTGRES_PASSWORD"
               valueFrom:
                 secretKeyRef:
-                  name: postgres-credentials
+                  name: postgresql
                   key: POSTGRES_PASSWORD
             - name: POSTGRESQL_DATABASE
               value: "demo"
